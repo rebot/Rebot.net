@@ -13,13 +13,25 @@
 			<div id="write">
 				<!-- m staat voor het menu'tje (zoals shout) -->
 				<ul class="m1">
-					<a href="#" onClick="javascript:writemessage()" >
-						<img src="http://dl.dropbox.com/u/4981807/ToolbarCompose.png" />
+					<a href="#" onClick="javascript:writemessage()" onMouseover="document.getElementById('js-m1').src ='http://dl.dropbox.com/u/4981807/ToolbarComposeHover.png';" onMouseOut="document.getElementById('js-m1').src ='http://dl.dropbox.com/u/4981807/ToolbarCompose.png';">
+						<img src="http://dl.dropbox.com/u/4981807/ToolbarCompose.png" id="js-m1"/>
 					</a>
 				</ul>
-				<ul class="m2"></ul>
-				<ul class="m3"></ul>
-				<ul class="m4"></ul>
+				<ul class="m2">
+					<a href="#" onClick="javascript:writemessage()" onMouseover="document.getElementById('js-m2').src ='http://dl.dropbox.com/u/4981807/ToolbarReplyHover.png';" onMouseOut="document.getElementById('js-m2').src ='http://dl.dropbox.com/u/4981807/ToolbarReply.png';">
+						<img src="http://dl.dropbox.com/u/4981807/ToolbarReply.png" id="js-m2" />
+					</a>
+				</ul>
+				<ul class="m3">
+					<a href="#" onClick="javascript:writemessage()" onMouseover="document.getElementById('js-m3').src ='http://dl.dropbox.com/u/4981807/ToolbarArchiveHover.png';" onMouseOut="document.getElementById('js-m3').src ='http://dl.dropbox.com/u/4981807/ToolbarArchive.png';">
+						<img src="http://dl.dropbox.com/u/4981807/ToolbarArchive.png" id="js-m3"/>
+					</a>				
+				</ul>
+				<ul class="m4">
+					<a href="#" onClick="javascript:writemessage()" onMouseover="document.getElementById('js-m4').src ='http://dl.dropbox.com/u/4981807/ToolbarDeleteHover.png';" onMouseOut="document.getElementById('js-m4').src ='http://dl.dropbox.com/u/4981807/ToolbarDelete.png';">
+						<img src="http://dl.dropbox.com/u/4981807/ToolbarDelete.png" id="js-m4"/>
+					</a>				
+				</ul>
 				<ul class="search">
 					<form>
 						<input placeholder="Search" name="search" type="text" cols="25" />					
@@ -150,7 +162,7 @@
 					</ul>
 				</div>
 			</div>
-			<div id="message">
+			<div id="message"><form>
 				<div class="title" id="js-title">
 					<ul>
 						<h1> Lorem ipsum dolor </h1>
@@ -172,14 +184,14 @@
 				<div class="photo">
 					<img src="http://dl.dropbox.com/u/4981807/Android%20512.png" id="js-photo"/>
 				</div>
-				<div class="submit" id="js-sumbit"> 
+				<div class="submit" id="js-submit"> 
 					<a href="#" onMouseover="javascript:button()" >
 						<button id="js-button">Submit</button>
 					</a>	
 					<arrow1></arrow1>
 					<text1></text1>
 				</div>
-
+			</form>
 			</div>
 		</content>
 	
