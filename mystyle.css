@@ -5,6 +5,11 @@ body	{
 		font-family: helvetica;
 		text-align: left;
 		}
+		
+@font-face {
+  font-family: "helvetica";
+  src: url("Helvetica.dfont");
+}
 
 /* Hier start alles wat in de header hoort */
 	
@@ -29,23 +34,27 @@ div#write ul	{
 /* Hier komen de menu's die dienen om shouts te schrijven, etc */
 				
 div#write ul.m1	{
-				background-image: url(http://dl.dropbox.com/u/4981807/ToolbarCompose.png);
+				/*background-image: url(http://dl.dropbox.com/u/4981807/ToolbarCompose.png);*/
 				left: 73px;
+				border: 0px;
 				}
 
 div#write ul.m2	{
-				background-image: url(http://dl.dropbox.com/u/4981807/ToolbarReply.png);
+				/*background-image: url(http://dl.dropbox.com/u/4981807/ToolbarReply.png);*/
 				left: 117px;
+				border: 0px;
 				}
 				
 div#write ul.m3	{
-				background-image: url(http://dl.dropbox.com/u/4981807/ToolbarArchive.png);
+				/*background-image: url(http://dl.dropbox.com/u/4981807/ToolbarArchive.png);*/
 				left: 161px;
+				border: 0px;
 				}
 				
 div#write ul.m4	{
-				background-image: url(http://dl.dropbox.com/u/4981807/ToolbarDelete.png);
+				/*background-image: url(http://dl.dropbox.com/u/4981807/ToolbarDelete.png);*/
 				left: 205px;
+				border: 0px;
 				}
 				
 div#write ul.search	{
@@ -98,35 +107,39 @@ div#menu	{
 /* Mijn menu's */
 
 div#menu ul.home	{
-					background-image: url(http://dl.dropbox.com/u/4981807/SidebarInbox.png);
+					/*background-image: url(http://dl.dropbox.com/u/4981807/SidebarInbox.png);*/
 					width: 40px;
 					height: 40px;
 					margin: 10.5px;
 					padding: 0px;
+					border: 0px;
 					}
 
 div#menu ul.images	{
-					background-image: url(http://dl.dropbox.com/u/4981807/SidebarFavorite.png);
+					/*background-image: url(http://dl.dropbox.com/u/4981807/SidebarFavorite.png);*/
 					width: 40px;
 					height: 40px;
 					margin: 10.5px;
 					padding: 0px;
+					border: 0px;
 					}
 
 div#menu ul.blog	{
-					background-image: url(http://dl.dropbox.com/u/4981807/SidebarDraft.png);
+					/*background-image: url(http://dl.dropbox.com/u/4981807/SidebarDraft.png);*/
 					width: 40px;
 					height: 40px;
 					margin: 10.5px;
 					padding: 0px;
+					border: 0px;
 					}
 					
 div#menu ul.archief	{
-					background-image: url(http://dl.dropbox.com/u/4981807/SidebarArchived.png);
+					/*background-image: url(http://dl.dropbox.com/u/4981807/SidebarArchived.png);*/
 					width: 40px;
 					height: 40px;
 					margin: 10.5px;
 					padding: 0px;
+					border: 0px;
 					}
 					
 /* Hier stoppen m'n menu's */
