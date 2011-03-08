@@ -16,10 +16,10 @@
  * to the MySQL database. Make sure the information is
  * correct.
  */
-define("DB_SERVER", "localhost");
-define("DB_USER", "rebot_inbox");
-define("DB_PASS", "lolebroek");
-define("DB_NAME", "rebot_inbox");
+define("DB_SERVER", "--------");
+define("DB_USER", "---------");
+define("DB_PASS", "---------");
+define("DB_NAME", "---------");
 
 /**
  * Database Table Constants - these constants
@@ -78,8 +78,8 @@ define("COOKIE_PATH", "/");  //Avaible in whole domain
  * sends to users, and whether to send a
  * welcome email to newly registered users.
  */
-define("EMAIL_FROM_NAME", "Trenson Gilles");
-define("EMAIL_FROM_ADDR", "trenson.gilles@gmail.com");
+define("EMAIL_FROM_NAME", "-----------");
+define("EMAIL_FROM_ADDR", "-----------");
 define("EMAIL_WELCOME", false);
 
 /**
