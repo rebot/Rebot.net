@@ -1,8 +1,8 @@
 <html>
 
 	<head>
-		<link rel="stylesheet" type="text/css" media="screen" href="mystyle.css" />
-		<?php include("analytics.php"); ?>
+		<link rel="stylesheet" type="text/css" media="screen" href="../css/mystyle.css" />
+		<?php include("../attributes/analytics.php"); ?>
 		<title>Rebot style test</title>
 	</head>
 	
@@ -25,7 +25,7 @@
 		<content>
 			<div id="menu">
 				<ul class="home">
-					<a href="test2.php">
+					<a href="../../index.php">
 						<img src="http://dl.dropbox.com/u/4981807/SidebarInbox.png" />
 					</a>
 				</ul>

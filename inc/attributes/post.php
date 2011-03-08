@@ -19,8 +19,12 @@
         if(isset($_POST['send'])) {
             // are any of the fields empty? the || means 'or'
             if(empty($_POST['title']) || empty($_POST['author']) || empty($_POST['email']) || empty($_POST['message'])) {
-                echo('<p class="error">Please fill in all fields</p>');
-            } else {
+                echo('<p class="error" onMouseOver="javascript:writemessage()" >Please fill in all fields</p>');
+            } else	{ 
+            	if(strlen($_POST['message']) < 80)	{
+            			echo('<p class="error" onMouseOver="javascript:writemessage()" >Please fill in at least 80 characters</p>');
+            	} else	{
+            		
             
                 // if there are no empty fields, insert into the database:
         
@@ -34,7 +38,8 @@
                 $title = htmlspecialchars(mysql_real_escape_string($_POST['title'])); 
                 $author = htmlspecialchars(mysql_real_escape_string($_POST['author'])); 
                 $email = htmlspecialchars(mysql_real_escape_string($_POST['email'])); 
-                $message = htmlspecialchars(mysql_real_escape_string($_POST['message']));
+                $message = mysql_real_escape_string(nl2br($_POST['message']));
+                $message = str_replace("\r\n"," ",$message);               
             
                     // this is our SQL string to insert shouts into db
                     $sql = "INSERT INTO inbox SET title='$title', author='$author', email='$email', message='$message', ipaddress='$ipaddress';";
@@ -47,6 +52,7 @@
                             // if it errors, send message
                             echo('<p class="error">There was an unexpected error when posting your shout.</p>');
                         }
+            	}
             }
         }
     
@@ -55,5 +61,7 @@
     
         // run the query. if it fails, display error
         $result = @mysql_query("$query") or die('<p class="error">There was an unexpected error grabbing shouts from the database.</p>');
+        
+
         
 ?>
